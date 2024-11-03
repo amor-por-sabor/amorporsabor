@@ -1,5 +1,35 @@
-/* Estilos do botão de redes sociais */
-.social-buttons {
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #e7c1c1;
+    color: #fff;
+    padding: 1.5em 0;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  /* Botões de redes sociais no canto superior direito */
+  .social-buttons {
     position: absolute;
     top: 1em;
     right: 1em;
@@ -27,38 +57,7 @@
     opacity: 0.8;
   }
   
-  /* Restante dos estilos */
-  
-  /* Reset básico */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-  }
-  
-  header {
-    text-align: center;
-    background-color: #d864e1;
-    color: #fff;
-    padding: 1.5em 0;
-    position: relative; /* Permite posicionamento dos botões de rede social */
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.2em;
-  }
-  
-  header p {
-    font-size: 1.2em;
-  }
-  
+  /* Estilo da seção do cardápio */
   .cardapio {
     display: flex;
     flex-wrap: wrap;
@@ -98,8 +97,59 @@
   footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #eb13ff;
+    background-color: #e7c1c1;
     color: #fff;
     margin-top: 2em;
+  }
+  
+  /* Media Queries para responsividade */
+  @media (max-width: 768px) {
+    /* Ajusta o tamanho do cabeçalho e das fontes em telas médias */
+    header h1 {
+      font-size: 2em;
+    }
+  
+    header p {
+      font-size: 1em;
+    }
+  
+    /* Redimensiona os botões de redes sociais para telas menores */
+    .social-buttons a {
+      padding: 0.4em 0.8em;
+      font-size: 0.9em;
+    }
+  
+    /* Redimensiona os cards para caber melhor em telas médias */
+    .card {
+      width: 150px;
+    }
+  
+    .card h3 {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Em telas pequenas, centraliza os botões de redes sociais e os coloca abaixo do cabeçalho */
+    .social-buttons {
+      position: static;
+      justify-content: center;
+      margin-top: 1em;
+    }
+  
+    /* Ajusta o tamanho do texto no cabeçalho para telas pequenas */
+    header h1 {
+      font-size: 1.8em;
+    }
+  
+    header p {
+      font-size: 0.9em;
+    }
+  
+    /* Redimensiona os cards para caber em telas muito pequenas */
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
   }
   
