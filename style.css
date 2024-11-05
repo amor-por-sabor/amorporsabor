@@ -1,155 +1,179 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #c21dc8;
+  color: #fff;
+  padding: 1.5em 0;
+  position: relative;
+}
+.logo {
+    width: 100px; /* Largura da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço à direita da logo */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+    margin-top: 10px; /* Adiciona margem superior para afastar da borda superior */
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-  }
-  
-  header {
-    text-align: center;
-    background-color: #f052f5;
-    color: #fff;
-    padding: 1.5em 0;
-    position: relative;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.2em;
-  }
-  
-  header p {
-    font-size: 1.2em;
-  }
-  
-  /* Botões de redes sociais no canto superior direito */
-  .social-buttons {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    display: flex;
-    gap: 0.5em;
-  }
-  
-  .social-buttons a {
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .btn-instagram {
-    background-color: #C13584;
-  }
-  
-  .btn-whatsapp {
-    background-color: #25D366;
-  }
-  
-  .social-buttons a:hover {
-    opacity: 0.8;
-  }
-  
-  /* Estilo da seção do cardápio */
-  .cardapio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5em;
-    padding: 2em;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .card h3 {
-    margin: 0.5em 0;
-    color: #ff6961;
-    font-size: 1.2em;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #f052f5;
-    color: #fff;
-    margin-top: 2em;
-  }
-  
-  /* Media Queries para responsividade */
   @media (max-width: 768px) {
-    /* Ajusta o tamanho do cabeçalho e das fontes em telas médias */
-    header h1 {
-      font-size: 2em;
-    }
-  
-    header p {
-      font-size: 1em;
-    }
-  
-    /* Redimensiona os botões de redes sociais para telas menores */
-    .social-buttons a {
-      padding: 0.4em 0.8em;
-      font-size: 0.9em;
-    }
-  
-    /* Redimensiona os cards para caber melhor em telas médias */
-    .card {
-      width: 150px;
-    }
-  
-    .card h3 {
-      font-size: 1em;
+    .logo {
+      margin-top: 30px; /* Aumenta a margem superior em dispositivos móveis */
     }
   }
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* Botões de redes sociais no canto superior direito */
+.social-buttons {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.social-buttons a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-instagram {
+  background-color: #C13584;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+}
+
+.social-buttons a:hover {
+  opacity: 0.8;
+}
+
+/* Estilo da seção do cardápio */
+.cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+  margin: 0.5em 0;
+  color: #ff6961;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #c21dc8;
+  color: #fff;
+  margin-top: 2em;
+}
+
+/* Estilo do modal */
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed; /* Fica fixo na tela */
+  z-index: 1000; /* Fica acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Cobrir toda a tela */
+  height: 100%; /* Cobrir toda a tela */
+  overflow: auto; /* Adiciona rolagem se necessário */
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência */
+}
+
+.modal-content {
+  background: linear-gradient(to bottom, #f087f4, #c21dc8, #3d043f); /* Gradiente com três cores */
+  margin: 10% auto; /* Margem superior de 10% e centraliza horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+  border: none;
+  width: 300px; /* Largura do modal */
+  min-height: 300px; /* Aumenta a altura mínima do modal */
+  text-align: center; /* Centraliza o texto */
+  border-radius: 20px;
+}
+.modal img {
+  width: 200px; /* Largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 15px; /* Espaço abaixo da imagem */
   
-  @media (max-width: 480px) {
-    /* Em telas pequenas, centraliza os botões de redes sociais e os coloca abaixo do cabeçalho */
-    .social-buttons {
-      position: static;
-      justify-content: center;
-      margin-top: 1em;
-    }
-  
-    /* Ajusta o tamanho do texto no cabeçalho para telas pequenas */
-    header h1 {
-      font-size: 1.8em;
-    }
-  
-    header p {
-      font-size: 0.9em;
-    }
-  
-    /* Redimensiona os cards para caber em telas muito pequenas */
-    .card {
-      width: 100%;
-      max-width: 300px;
-    }
+}
+.modal h3 {
+  font-size: 2em; /* Aumentado para dar mais destaque */
+  color: white
+}
+
+.modal p {
+  font-size: 1.1em; /* Aumentado para dar mais destaque */
+  color: white
+}
+
+.close {
+  color: #aaa; /* Cor do botão de fechar */
+  float: right; /* Alinha à direita */
+  font-size: 28px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Muda a cor ao passar o mouse */
+  text-decoration: none; /* Remove sublinhado */
+  cursor: pointer; /* Muda o cursor para pointer */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
   }
-  
+
+  header p {
+    font-size: 1em;
+  }
+}
