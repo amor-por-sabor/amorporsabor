@@ -156,7 +156,7 @@ footer {
 .close {
   color: #aaa; /* Cor do botão de fechar */
   float: right; /* Alinha à direita */
-  font-size: 28px; /* Tamanho da fonte */
+  font-size: 34px; /* Tamanho da fonte */
   font-weight: bold; /* Negrito */
 }
 
