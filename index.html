@@ -11,7 +11,7 @@
   <header>
     <img src="Amor Por Sabor Logo.png" alt="Logo da Amor por Sabor" class="logo"> <!-- Adicionando a logo -->
     <h1>Amor por Sabor</h1>
-    <p>Cardápio de Bolos</p>
+    <p>Cardápio de Bolos e Docinhos</p>
   
     <!-- Botões de redes sociais -->
     <div class="social-buttons">
@@ -20,8 +20,9 @@
     </div>
   </header>
 
-  <!-- Seção Cardápio -->
+  <!-- Seção Cardápio de Bolos -->
   <section class="cardapio">
+    <h2>Bolos</h2>
     <div class="card" data-title="Bolo de Dois Amores" data-description="Delicioso bolo de chocolate com cobertura cremosa.">
       <img src="dois amores.jpeg" alt="Imagem do Bolo de Dois Amores">
       <h3>Bolo de Dois Amores</h3>
@@ -37,6 +38,19 @@
     <div class="card" data-title="Bolo de Ninho" data-description="Bolo de limão com glacê azedinho.">
       <img src="Ninho.jpeg" alt="Imagem do Bolo de Ninho">
       <h3>Bolo de Ninho</h3>
+    </div>
+  </section>
+
+  <!-- Seção Cardápio de Docinhos -->
+  <section class="cardapio">
+    <h2>Docinhos</h2>
+    <div class="card" data-title="Docinhos Tradicionais" data-description="Descriçao.">
+      <img src="Docinhos Tradicionais.jpg" alt="Imagem do Docinhos Tradicionais">
+      <h3>Docinhos Tradicionais</h3>
+    </div>
+    <div class="card" data-title="Docinhos Gourmet" data-description="Docinhos Gourmet">
+      <img src="Docinhos Gourmet.jpeg" alt="Imagem do Docinho Gourmet">
+      <h3>Docinhos Gourmet</h3>
     </div>
   </section>
 
@@ -99,7 +113,7 @@
       });
     });
 
-    // Fun ção para fechar o modal
+    // Função para fechar o modal
     span.onclick = function() {
       modal.style.display = "none";
     }
