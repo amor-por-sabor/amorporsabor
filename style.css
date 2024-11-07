@@ -78,6 +78,15 @@ header p {
   padding: 2em;
 }
 
+.cardapio h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #c21dc8; /* Cor do título das seções */
+}
+
+/* O restante do CSS permanece o mesmo */
+
 .card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -154,7 +163,7 @@ footer {
 }
 
 .close {
-  color: #aaa; /* Cor do botão de fechar */
+  color: #ffffff; /* Cor do botão de fechar */
   float: right; /* Alinha à direita */
   font-size: 34px; /* Tamanho da fonte */
   font-weight: bold; /* Negrito */
